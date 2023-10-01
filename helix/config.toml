@@ -1,5 +1,21 @@
-theme = "everforest_dark"
+theme = "catppuccin_frappe"
+
+[editor]
+true-color = true
+mouse = false
+bufferline= "multiple"
+
+[editor.file-picker]
+hidden = false
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.lsp]
+display-inlay-hints = true
+
 [keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
 
 # Mac Alt-.
 "≥" = "repeat_last_motion"
@@ -78,3 +94,4 @@ theme = "everforest_dark"
 
 # Mac Alt-<
 "¯" = "goto_file_start"
+

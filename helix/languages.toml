@@ -2,7 +2,16 @@
 name = "python"
 scope = "source.python"
 injection-regex = "python"
-file-types = ["py","pyi","py3","pyw","ptl",".pythonstartup",".pythonrc","SConstruct"]
+file-types = [
+  "py",
+  "pyi",
+  "py3",
+  "pyw",
+  "ptl",
+  ".pythonstartup",
+  ".pythonrc",
+  "SConstruct",
+]
 shebangs = ["python"]
 roots = ["setup.py", "setup.cfg", "pyproject.toml"]
 comment-token = "#"
@@ -16,6 +25,7 @@ auto-format = true
 [[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
+
 [[language]]
 name = "rust"
 
